@@ -1,0 +1,12 @@
+<form
+  class="w-full border boder-grey-lighter rounded p-4 my-8"
+  onsubmit={{action "submit"}}>
+
+  <div class="flex flex-wrap">
+    {{yield (hash
+      button=(component "button" model=model)
+      input=(component "text-field" model=model)
+      legend=(component "legend")
+    )}}
+  </div>
+</form>

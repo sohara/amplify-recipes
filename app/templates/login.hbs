@@ -1,0 +1,8 @@
+<Form @model={{this}} as |f|>
+  <f.legend>Sign In</f.legend>
+  <f.input @field="email" />
+  <f.input @field="password" @type="password" />
+  <div class="w-full mb-6 px-3">
+    <f.button @type="submit">Submit</f.button>
+  </div>
+</Form>
