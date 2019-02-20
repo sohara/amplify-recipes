@@ -9,6 +9,11 @@
             "UnauthRoleName": "amplify-recipes-20190220133003-unauthRole",
             "StackName": "amplify-recipes-20190220133003",
             "StackId": "arn:aws:cloudformation:ap-southeast-2:069223256342:stack/amplify-recipes-20190220133003/6e059570-34b7-11e9-8b4a-0657769f7dfc"
+        },
+        "categories": {
+            "auth": {
+                "cognito1495c055": {}
+            }
         }
     }
 }
