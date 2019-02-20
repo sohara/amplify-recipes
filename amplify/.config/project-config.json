@@ -1,0 +1,17 @@
+{
+    "projectName": "amplify-recipes",
+    "version": "2.0",
+    "frontend": "javascript",
+    "javascript": {
+        "framework": "ember",
+        "config": {
+            "SourceDir": "app",
+            "DistributionDir": "dist",
+            "BuildCommand": "npm run-script build -- -e production",
+            "StartCommand": "npm run-script start"
+        }
+    },
+    "providers": [
+        "awscloudformation"
+    ]
+}
