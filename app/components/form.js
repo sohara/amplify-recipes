@@ -6,6 +6,9 @@ export default Component.extend({
   actions: {
     submit(e) {
       e.preventDefault();
+      if (this.onSubmit) {
+        this.onSubmit();
+      }
     }
   }
 });

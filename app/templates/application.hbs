@@ -1,7 +1,26 @@
+<nav class="bg-grey-darkest mb-4 p-4">
+  <div class="container mx-auto flex flex-wrap items-center justify-between">
+    <h1 class="text-grey-lighter">Amplify Notes</h1>
+    <div>
+      {{#if this.session.username}}
+        <span class="text-grey-lighter mr-6">
+          Hello {{this.session.username}}
+        </span>
+        <button onclick={{action "signout"}} class="block mt-4 md:inline-block md:mt-0 no-underline text-grey-lighter font-mono tracking-wide">
+          Signout
+        </button>
+      {{else}}
+        {{#link-to "login" class="block mt-4 md:inline-block md:mt-0 mr-6 no-underline text-grey-lighter font-mono tracking-wide"}}
+          Login
+        {{/link-to}}
+        {{#link-to "signup" class="block mt-4 md:inline-block md:mt-0 mr-6 no-underline text-grey-lighter font-mono tracking-wide"}}
+          Sign Up
+        {{/link-to}}
+      {{/if}}
+    </div>
+
+  </div>
+</nav>
 <div class="container mx-auto">
-  <h1>Application</h1>
-  {{#link-to "login"}}
-    Login
-  {{/link-to}}
   {{outlet}}
 </div>

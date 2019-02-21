@@ -1,11 +1,9 @@
-{{#if message}}
-  <h3>{{message}}</h3>
-{{/if}}
-<Form @model={{this}} @onSubmit={{action "login"}} as |f|>
-  <f.legend>Sign In</f.legend>
+<Form @model={{this}} @onSubmit={{action "signup"}} as |f|>
+  <f.legend>Sign Up</f.legend>
   <f.errors @errors={{this.errors}} />
   <f.input @field="username" />
   <f.input @field="password" @type="password" />
+  <f.input @field="email" />
   <div class="w-full mb-6 px-3">
     <f.button @type="submit">Submit</f.button>
   </div>

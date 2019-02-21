@@ -1,0 +1,10 @@
+{{model}}
+<Form @model={{this}} @onSubmit={{action "confirm"}} as |f|>
+  <f.legend>Confirm Signup</f.legend>
+  <f.errors @errors={{this.errors}} />
+  <f.input @field="username" />
+  <f.input @field="code"  />
+  <div class="w-full mb-6 px-3">
+    <f.button @type="submit">Submit</f.button>
+  </div>
+</Form>

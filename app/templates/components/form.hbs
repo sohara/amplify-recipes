@@ -5,6 +5,7 @@
   <div class="flex flex-wrap">
     {{yield (hash
       button=(component "button" model=model)
+      errors=(component "errors")
       input=(component "text-field" model=model)
       legend=(component "legend")
     )}}

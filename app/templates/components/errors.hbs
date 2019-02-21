@@ -1,0 +1,10 @@
+{{#if @errors}}
+  <div class="bg-red-lightest border border-red-dark leading-normal mx-3 px-3 py-3 rounded text-red-dark w-full mb-6">
+    <p>
+      Please correct the following errors:
+    </p>
+    {{#each @errors as |error|}}
+      {{error}}
+    {{/each}}
+  </div>
+{{/if}}
