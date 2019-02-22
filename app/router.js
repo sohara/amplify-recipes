@@ -7,7 +7,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('login');
+  this.route('signin');
   this.route('signup');
   this.route('confirm-signup');
   this.route('authenticated', { path: '' }, function () {

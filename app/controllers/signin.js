@@ -11,7 +11,7 @@ export default Controller.extend({
   },
 
   actions: {
-    async login () {
+    async signin () {
       let { username, password } = this;
       try {
         await this.amplify.Auth.signIn(username, password);

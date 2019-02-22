@@ -10,7 +10,7 @@ export default Route.extend({
       let user = await this.amplify.Auth.currentAuthenticatedUser();
       this.session.load(user.username, user.signInUserSession.accessToken.jwtToken, user.attributes);
     } catch (error) {
-      this.transitionTo('login');
+      this.transitionTo('signin');
     }
   }
 });

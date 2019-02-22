@@ -7,7 +7,7 @@ export default Controller.extend({
   actions: {
     async signout() {
       await this.session.signout();
-      this.transitionToRoute('login');
+      this.transitionToRoute('signin');
     }
   }
 });

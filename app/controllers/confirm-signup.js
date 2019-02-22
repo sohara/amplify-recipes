@@ -18,7 +18,7 @@ export default Controller.extend({
       try {
         let result = await this.amplify.Auth.confirmSignUp(username, code);
         if (result === "SUCCESS") {
-          this.transitionToRoute('login');
+          this.transitionToRoute('signin');
         }
       } catch (error) {
         if (error.message) {
