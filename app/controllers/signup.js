@@ -14,13 +14,12 @@ export default Controller.extend({
 
   actions: {
     async signup () {
-      let { username, password, email, phoneNumber } = this;
+      let { username, password, email } = this;
       let signUpInfo = {
         username,
         password,
         attributes: {
-          email,
-          phone_number: phoneNumber
+          email
         }
       };
       try {

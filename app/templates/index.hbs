@@ -1,2 +1,14 @@
-<h3>Index Route</h3>
+<h3>Recipes</h3>
+<Form @model={{this}}
+  @onSubmit={{action "createRecipe"}} as |f|>
+  <f.legend>Create a recipe</f.legend>
+  <f.errors @errors={{this.errors}} />
+  <f.input @field="name" />
+  <div class="w-full mb-6 px-3">
+    <f.button @type="submit">Submit</f.button>
+  </div>
+</Form>
+{{#each model as |recipe|}}
+  {{recipe.name}}
+{{/each}}
 {{outlet}}

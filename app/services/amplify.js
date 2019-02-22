@@ -9,7 +9,8 @@ import Amplify, {
   Cache,
   PubSub,
   Logger,
-  Interactions
+  Interactions,
+  graphqlOperation
 } from 'aws-amplify'
 
 export default Service.extend({
@@ -23,6 +24,7 @@ export default Service.extend({
   PubSub,
   Interactions,
   Logger,
+  graphqlOperation,
   configure(config) {
     this.Amplify.configure(config)
   }
