@@ -1,5 +1,7 @@
 {{model}}
-<Form @model={{this}} @onSubmit={{action "confirm"}} as |f|>
+<Form @model={{this}}
+  @classNames="md:w-1/2 lg:w-1/3 mx-auto"
+  @onSubmit={{action "confirm"}} as |f|>
   <f.legend>Confirm Signup</f.legend>
   <f.errors @errors={{this.errors}} />
   <f.input @field="username" />
